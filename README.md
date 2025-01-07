@@ -1,62 +1,62 @@
 # PROJECT-UAS
 Pendahuluan   
-Program penyewaan mobil ini dirancang untuk mengelola proses penyewaan mobil dengan memanfaatkan konsep Pemrograman Berorientasi Objek (OOP) dan struktur modular.    
-Program ini memungkinkan pengguna untuk melihat daftar mobil, menyewa mobil, dan melihat daftar penyewaan yang telah dilakukan.   
+Program pemesanan tiket travel wisata ini dirancang untuk mengelola proses pemesanan tiket dengan memanfaatkan konsep Pemrograman Berorientasi Objek (OOP) dan struktur modular.    
+Program ini memungkinkan pengguna untuk melihat daftar destinasi, pemesanan tiket, dan melihat daftar harga yang telah dilakukan.   
 
 Struktur Program   
 Program ini terdiri dari tiga komponen utama yang terorganisir dalam folder sesuai dengan fungsinya:   
 
 Folder data   
-Berisi data mobil yang tersedia untuk disewa. Data ini disimpan sebagai daftar objek yang merepresentasikan setiap mobil dengan atribut seperti ID, nama, dan harga.   
+Berisi data destinasi yang tersedia untuk dipesan. Data ini disimpan sebagai daftar objek yang merepresentasikan setiap tiket dengan atribut seperti ID, nama, dan harga.   
 
 Folder process   
-Mengelola logika utama untuk memproses penyewaan. Misalnya, melakukan validasi input pengguna, memastikan ketersediaan mobil, dan mencatat penyewaan.   
+Mengelola logika utama untuk memproses pemesanan. Misalnya, melakukan validasi input pengguna, memastikan ketersediaan tiket, dan mencatat pesanan.   
 
 Folder view   
-Bertanggung jawab untuk menampilkan informasi ke pengguna, seperti daftar mobil yang tersedia dan daftar penyewaan.    
+Bertanggung jawab untuk menampilkan informasi ke pengguna, seperti daftar destinasi yang tersedia dan daftar pesanan.    
 
 File main.py   
 Berfungsi sebagai titik masuk program. File ini mengatur interaksi antara modul data, process, dan view.   
 
 Fitur Program   
-Lihat Daftar Mobil   
-Program menampilkan daftar mobil yang tersedia, termasuk ID, nama mobil, dan harga sewanya. Daftar ini diambil dari modul data.   
+Lihat Daftar destinasi
+Program menampilkan daftar destinasi yang tersedia, termasuk ID, tempat destinasi, dan harga tiketnya. Daftar ini diambil dari modul data.   
 
-Sewa Mobil   
-Pengguna dapat menyewa mobil dengan memasukkan nama dan ID mobil.   
+pemesanan tiket
+Pengguna dapat memesan tiket dengan memasukkan nama dan ID destinasi.   
 
 Program akan memvalidasi nama untuk memastikan tidak kosong.   
-Program juga memvalidasi ID mobil untuk memastikan bahwa mobil yang dipilih ada dalam daftar.   
-Jika validasi berhasil, data penyewaan disimpan dalam sistem.   
-Lihat Daftar Penyewaan   
-Program menampilkan semua penyewaan yang telah dilakukan. Setiap penyewaan mencakup nama penyewa, mobil yang disewa, dan harga sewanya. Jika belum ada penyewaan, program akan menampilkan pesan bahwa belum ada data.   
+Program juga memvalidasi ID destinasi untuk memastikan bahwa destinasi yang dipilih ada dalam daftar.   
+Jika validasi berhasil, data pesanan disimpan dalam sistem.   
+Lihat Daftar Pesanan
+Program menampilkan semua pesanan yang telah dilakukan. Setiap tiket pemesanan mencakup nama pemesan, tiket yang di pesan, dan harga tiketnya. Jika belum ada pesanan, program akan menampilkan pesan bahwa belum ada data.   
 
 Konsep yang Digunakan   
 Pemrograman Berorientasi Objek (OOP)   
 Program menggunakan class untuk memodelkan data dan logika, seperti:   
 
-Class Car untuk merepresentasikan data mobil.   
-Class CarRentalProcess untuk mengelola logika penyewaan.   
-Class CarRentalView untuk menampilkan data.   
+Class destination untuk merepresentasikan data destinasi.   
+Class travelsProcess untuk mengelola logika pemesanan.   
+Class travelsView untuk menampilkan data.   
 Modularitas   
 Program dipisahkan menjadi beberapa modul agar lebih terstruktur dan mudah dipelihara.   
 
 Validasi Input dan Error Handling   
 
-Input pengguna divalidasi untuk mencegah kesalahan, seperti nama kosong atau ID mobil yang tidak valid.   
+Input pengguna divalidasi untuk mencegah kesalahan, seperti nama kosong atau ID destinasi yang tidak valid.   
 Error handling dilakukan dengan pesan yang informatif agar pengguna tahu apa yang salah.   
 Alur Program   
 Program dimulai dengan menampilkan menu utama, yang memiliki 4 pilihan:   
 
-Melihat daftar mobil.   
-Menyewa mobil.   
-Melihat daftar penyewaan.   
+Melihat daftar destinasi yang tersedia.   
+Memesan tiket.   
+Melihat daftar pemesanan.   
 Keluar dari program.   
 Pengguna memilih salah satu opsi:   
 
-Jika memilih "Lihat Daftar Mobil", program akan menampilkan semua mobil.    
-Jika memilih "Sewa Mobil", pengguna akan diminta untuk memasukkan ID mobil dan nama. Setelah itu, program akan memvalidasi input dan mencatat penyewaan jika valid.   
-Jika memilih "Lihat Daftar Penyewaan", program akan menampilkan daftar penyewaan yang sudah dilakukan.   
+Jika memilih "Lihat Daftar destinasi", program akan menampilkan semua destinasi.    
+Jika memilih "pesan tiket", pengguna akan diminta untuk memasukkan ID destinasi dan nama. Setelah itu, program akan memvalidasi input dan mencatat pemesanan jika valid.   
+Jika memilih "Lihat Daftar Pesanan", program akan menampilkan daftar pesanan yang sudah dilakukan.   
 Program terus berjalan sampai pengguna memilih "Keluar".  
 
 # program Output    
